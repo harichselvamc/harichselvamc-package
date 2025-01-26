@@ -1,4 +1,6 @@
-name: Publish Python Package
+# .github/workflows/ci-cd.yml
+
+name: CI/CD Pipeline
 
 on:
   push:
@@ -8,8 +10,15 @@ on:
       - 'v*'   # Trigger the action when a tag starting with 'v' is pushed (e.g., 'v1.0.0')
 
 jobs:
-  build:
+  pypi-publish:
+    name: Upload release to PyPI
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/<your-pypi-project-name>  # Replace <your-pypi-project-name> with your actual PyPI project name
+    permissions:
+      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
+
     steps:
       # Checkout code from the repository
       - name: Checkout code
@@ -32,9 +41,9 @@ jobs:
         run: |
           python setup.py sdist bdist_wheel
 
-      # Upload the package to PyPI using Twine
-      - name: Upload package to PyPI
-        uses: pypa/gh-action-pypi-publish@v2
+      # Publish package distributions to PyPI
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
