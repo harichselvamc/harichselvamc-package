@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="harichselvamc",
-    version="0.5",
+    version="0.6",
     packages=find_packages(),
     description="A simple Python package to generate Pascal's Triangle.",
     long_description="""
