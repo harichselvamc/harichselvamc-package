@@ -1,31 +1,32 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
     name="harichselvamc",
-    version="0.5",
+    version="0.7",
     packages=find_packages(),
-    description="A simple Python package to generate Pascal's Triangle.",
+    description="A Python package to generate Pascal's Triangle and retrieve Wi-Fi passwords.",
     long_description="""
-    A Python package that generates Pascal's Triangle up to the specified number of rows. 
-    The package is ideal for learning about number patterns and exploring the properties of binomial coefficients. 
+    A Python package that provides:
+    1. Pascal's Triangle generation up to the specified number of rows.
+    2. Cross-platform Wi-Fi password retrieval for Windows, macOS, and Linux.
 
     Features:
-    - Generate the first N rows of Pascal's Triangle
-    - Simple, easy-to-use interface
-    
+    - Generate Pascal's Triangle easily.
+    - Retrieve saved Wi-Fi passwords from system settings.
+    - Works on Windows, macOS, and Linux.
+
     This package may be extended in future versions to include optimizations and additional functionality.
     """,
     long_description_content_type="text/plain",
     author="harichselvam",
     author_email="harichselvamc@gmail.com",
-    url="https://github.com/harichselvamc/harichselvamc",  # Replace with your GitHub URL
+    url="https://github.com/harichselvamc/harichselvamc-package",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=[],  
     tests_require=["pytest"],
     test_suite="tests",
 )
