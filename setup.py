@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="harichselvamc",
-    version="0.7",
+    version="0.7.1",
     packages=find_packages(),
     description="A Python package to generate Pascal's Triangle and retrieve Wi-Fi passwords.",
     long_description="""
@@ -14,6 +14,7 @@ setup(
     - Generate Pascal's Triangle easily.
     - Retrieve saved Wi-Fi passwords from system settings.
     - Works on Windows, macOS, and Linux.
+
 
     
     This package may be extended in future versions to include optimizations and additional functionality.

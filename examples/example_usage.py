@@ -10,7 +10,7 @@ for row in triangle:
     print(row)
 
 # Get Wi-Fi password for a given network
-network_name = "YourNetworkName"
+network_name = "yournetwork"
 wifi_password = get_wifi_password(network_name)
 
 # Print the Wi-Fi password
