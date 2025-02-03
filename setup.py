@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="harichselvamc",
-    version="0.7.1",
+    version="0.7.2",
     packages=find_packages(),
     description="A Python package to generate Pascal's Triangle and retrieve Wi-Fi passwords.",
     long_description="""
