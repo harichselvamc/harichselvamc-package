@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/project/harichselvamc/  # This is your project URL
+      url: https://pypi.org/project/harichselvamc/  #project URL
     permissions:
       id-token: write  # IMPORTANT: this permission is required for trusted publishing
 
@@ -45,5 +45,5 @@ jobs:
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: __token__          # Use PyPI token for authentication
-          password: ${{ secrets.PYPI_API_TOKEN }}  # Ensure you have set PYPI_API_TOKEN in your GitHub secrets
+          user: __token__          # PyPI token for authentication
+          password: ${{ secrets.PYPI_API_TOKEN }}  # PYPI_API_TOKEN in GitHub secrets
