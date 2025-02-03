@@ -8,13 +8,14 @@ setup(
     long_description="""
     A Python package that provides:
     1. Pascal's Triangle generation up to the specified number of rows.
-    2. Cross-platform Wi-Fi password retrieval for Windows, macOS, and Linux.
+    2. Cross-platform Wi-Fi password retrieval for Windows, macOS, and Linux. 
 
     Features:
     - Generate Pascal's Triangle easily.
     - Retrieve saved Wi-Fi passwords from system settings.
     - Works on Windows, macOS, and Linux.
 
+    
     This package may be extended in future versions to include optimizations and additional functionality.
     """,
     long_description_content_type="text/plain",
